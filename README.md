@@ -3,6 +3,11 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+[//]: # (Picture Definition)
+[model]: https://user-images.githubusercontent.com/37302013/46427017-2a563e00-c77b-11e8-9c97-f41667ea51dc.JPG
+
+
+
 ## Project Discription
 
 This project is part of UDacity's Self-Driving Car Engineer Nanodegree Program. The purpose is to develop and MPC controller capable of running the vehicle in a track. The project was developed to meet the rubric found [here](https://review.udacity.com/#!/rubrics/896/view).
@@ -43,8 +48,12 @@ This project is part of UDacity's Self-Driving Car Engineer Nanodegree Program. 
 
 ## The model
 
-A discrete time kinematic model was utilizedfor the Model Predictive Controller as shown below:
+A discrete time kinematic model was utilizedfor the Model Predictive Controller including four states (x & y position, orientation, and velocity) as shown below:
 
+![kinematic model][model]
 
+Where x and y represent the position in 2D coordinates, v is the speed of the vehicle, a is the acceleration, dt is the time step, psi is represents the car's orientation and delta is the steering angle. 
 
+The errors to minimize by the controller are the cross track error (CTE) and orientation error (epsi) which were defined as the differance between the current states and the ideal states from a fitted polynomial as will be discussed below.
 
+## 
