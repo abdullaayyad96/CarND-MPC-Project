@@ -50,13 +50,13 @@ class FG_eval {
 		fg[0] = 0;
 
 		// defining weights for the cost function
-		double w_cte = 25;
+		double w_cte = 15;
 		double w_epsi = 5;
-		double w_v = 0.8;
-		double w_delta = 1;
+		double w_v = 1;
+		double w_delta = 50;
 		double w_a = 5;
-		double w_delta_variation = 20000;
-		double w_a_variation = 100;
+		double w_delta_variation = 30000;
+		double w_a_variation = 200;
 
 		// calculating the cost
 		for (size_t itr = 0; itr < N; itr++)
