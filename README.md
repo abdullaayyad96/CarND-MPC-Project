@@ -1,16 +1,15 @@
 # CarND-Controls-MPC
 Self-Driving Car Engineer Nanodegree Program
 
----
-
 [//]: # (Picture Definition)
 [model]: https://user-images.githubusercontent.com/37302013/46427017-2a563e00-c77b-11e8-9c97-f41667ea51dc.JPG
-
-
+[gif]: ./mpc_trim.gif
 
 ## Project Discription
 
 This project is part of UDacity's Self-Driving Car Engineer Nanodegree Program. The purpose is to develop and MPC controller capable of running the vehicle in a track. The project was developed to meet the rubric found [here](https://review.udacity.com/#!/rubrics/896/view).
+
+![alt_text][gif]
 
 ## Dependencies
 
